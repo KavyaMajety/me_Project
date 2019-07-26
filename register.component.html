@@ -1,0 +1,62 @@
+<div class="container">
+  <form class="form-horizontal" role="form" #regForm = "ngForm" >
+      <div class="form-group">
+          <label for="firstName" class="col-sm-3 control-label">First Name</label>
+          <div class="col-sm-9">
+              <input type="text" id="FirstName" placeholder="First Name" class="form-control" name = "firstName"autofocus [(ngModel)]  = "User.firstName">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+          <div class="col-sm-9">
+              <input type="text" id="LastName" placeholder="Last Name" class="form-control" name = "lastName" autofocus [(ngModel)] = "User.lastName">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="email" class="col-sm-3 control-label">Email* </label>
+          <div class="col-sm-9">
+              <input type="email" id="Email" placeholder="Email" class="form-control" name= "email" [(ngModel)] = "User.emailId">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="password" class="col-sm-3 control-label">Password*</label>
+          <div class="col-sm-9">
+              <input type="password" id="Password" placeholder="Password" class="form-control" name = "password" [(ngModel)] = "User.password">
+          </div>
+      </div>
+      <div class="form-group">
+            <label for="Height" class="col-sm-3 control-label">Age* </label>
+        <div class="col-sm-9">
+            <input type="number" id="Age" placeholder="Age" class="form-control" name = "age" [(ngModel)]  = "User.age"> 
+        </div>
+    </div>
+      <div class="form-group">
+              <label for="Height" class="col-sm-3 control-label">Height* </label>
+          <div class="col-sm-9">
+              <input type="number" id="Height" placeholder="Please write your height in centimetres" class="form-control" name = "height" [(ngModel)] = "User.height"> 
+          </div>
+      </div>
+       <div class="form-group">
+              <label for="weight" class="col-sm-3 control-label">Weight* </label>
+          <div class="col-sm-9">
+              <input type="number" id="Weight" placeholder="Please write your weight in kilograms" class="form-control" name = "weight" [(ngModel)]  = "User.weight">
+          </div>
+      </div>
+   <div class="form-group">
+        <label for="password" class="col-sm-3 control-label">Gender*</label>
+        <div class="col-sm-9">
+            <select name = "gender"  [(ngModel)] = "User.gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Rather not say</option>
+            </select>
+        </div>
+    </div>
+      <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+              <span class="help-block">*Required fields</span>
+          </div>
+      </div>
+      <button type="button" (click)="registerUser()" class="btn btn-primary btn-block">Register</button>
+  </form> 
+   </div>

@@ -1,0 +1,26 @@
+<h1 class="display-4" style = "color:#FF7851"><b>Welcome to the Meal Plans User hub</b></h1>
+<div class="jumbotron">
+ </div>
+ <h3 class = "display-4" align = 'left' style = "color: #343a40"> Scroll down to view ideas!<br/> </h3>
+<br/>
+<div class="row">
+
+        <div class="column">
+    
+          <div class="card"  style= "height: 1500x; width: 300x" *ngFor="let MealPlans of MealPlans">
+    
+            <div class="card-body">
+                <p class="card-text"><b>Type:- {{MealPlans.type}}</b></p>
+                <p class="card-text"><b>Duration:-  {{MealPlans.duration}} days</b></p>
+                <p class="card-text"><b>Description:-  </b>{{MealPlans.description}}</p>
+                <p class="card-text"><b>Fat:-  </b>{{MealPlans.fats}}</p>
+                <p class="card-text"><b>Protien:-  </b>{{MealPlans.protiens}}</p>
+                <p class="card-text"><b>Carbohydrate:-  </b>{{MealPlans.carbohydrates}}</p>
+                <p class="card-text"><b>Fibre:-  </b>{{MealPlans.fibre}}</p>
+            </div>
+    
+        </div>
+    
+        </div>
+    
+     </div>

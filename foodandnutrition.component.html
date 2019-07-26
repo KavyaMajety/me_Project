@@ -1,0 +1,78 @@
+<h1 class="display-4" style = "color:#FF7851"><b>Welcome to the Food & Nutrition hub</b></h1>
+<div class="jumbotron">
+  <h3 class = "display-4" align = 'left' style = "color: #FFCE67"> GOT ANY IDEAS? <br/> Scroll down to add them </h3>
+ </div>
+<br/>
+<div class="form-group">
+    <label for="comment">Enter your Ideas!</label>
+    Character limit 255
+    <br/>
+    <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+    <button type = "button" (click)="addIdea()">Submit my Idea</button>
+  </div>
+ <div class="row">
+    <div class="column">
+      <div class="card"  style= "height: 1500x; width: 300x">
+        <img src="assets/quinoa-in-dry-and-cooked-forms[1].jpg" alt="Avatar" style="width:100%">
+        <div class="card-body">
+          <h4><b>Nutritional Facts for Quinoa</b></h4> 
+          <p>Quinoa has an incredible nutrition base. Compared with refined grains, whole grains like quinoa are considered better sources of fiber, protein, B vitamins, and iron, according to the Mayo Clinic.But, aside from these key nutrients, one of the greatest nutrient profiles quinoa can offer is its level of protein.</p> 
+          <p>Quinoa is relatively low in calories. One cup of cooked quinoa (185 g) provides 222 calories. But, of course, watch what you add to the quinoa, as it's in the cooking process that most of the calories and fat will be added, depending on how you prepare it. </p>
+        </div>
+    </div>
+    </div>
+ </div>
+
+  
+  
+  <div class="row">
+    <div class="card" style= "height: 1500x; width: 300x">
+        <img src="assets/macadamia nuts.jpg" alt="Avatar" style="width:100%">
+        <div class="card-body">
+          <h4><b>The Health Benefits of Macadamia nuts </b></h4> 
+          <h6 align= "left"><b>1. Rich in nutrients</b></h6>
+          <p>Macadamia nuts are calorie-rich nuts that are high in healthy fats, vitamins, and minerals.</p> 
+          <h6 align= "left"><b>2. Loaded with antioxidants</b></h6>
+          <p>Like most nuts, macadamia nuts are a great source of antioxidants. Antioxidants neutralize free radicals, which are unstable molecules that can cause cellular damage and increase your risk of conditions like diabetes, Alzheimer’s disease, and heart disease </p>
+        </div>
+   </div>
+  </div>
+  
+  <div class="row">
+      <div class="card" style= "height: 1500x; width: 300x">
+          <img src="assets/Ploughman Pie.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4><b>Ploughman Pie Recipe </b></h4>
+            <p>Total Time 30 minutes</p>
+            <p>Servings 2 people</p>
+            <li>100 g (3.5oz) almond meal or almond flour</li>
+            <li>6 eggs</li>
+            <li>100 g (3.5oz) cheddar or other cheese grated</li>
+            <li>100 g (3.5oz) ham</li>
+            <li>salad to serve</li>
+            <li>mustard to serve</li>
+            <ol>
+              <li>Turn your oven to 200C. Line the base and sides of a 24cm.If you can’t be bothered you can just grease but the eggs do like to stick!</li>
+              <li>Mix eggs, cheese and a pinch of salt in a bowl. Pour egg mixture over the almond meal.</li>
+              <li>Bake for 12-15 minutes or until the eggs are set and the pie is puffing up and slightly golden.</li>
+              <li>Serve wedges of the pie with ham, mustard and salad leaves.</li>
+            </ol>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="card" style= "height: 1500x; width: 300x">
+            <img src="assets/Marshmallow.jpg" alt="Avatar" style="width:100%">
+            <div class="card-body">
+              <h4><b>Marshmallow, Healthy?</b></h4>
+              <p>Marshmallows are a processed food that provides little to no health benefits.
+  
+                  Marshmallows are a low-calorie, nearly fat-free food. If you are watching your weight, eating a marshmallow is a quick and easy way to satisfy your sweet tooth that won't do too much damage to your waistline.
+                  
+                  In addition, adding marshmallows to certain foods might help you to boost your intake of healthy vegetables. For this reason, many savvy Thanksgiving cooks add marshmallows to sweet potatoes.
+                  
+                  Lastly, marshmallows are almost always a gluten-free food. So if you are gluten-intolerant, this is probably a safe food to consume.</p>
+            </div>
+        </div>
+      </div>
+      <router-outlet></router-outlet>

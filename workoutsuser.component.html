@@ -1,0 +1,24 @@
+<h1 class="display-4" style = "color:#FF7851"><b>Welcome to the Workouts User hub</b></h1>
+<div class="jumbotron">
+  <h3 class = "display-4" align = 'left' style = "color: #fff"> Scroll down to view ideas!<br/> </h3>
+ </div>
+<br/>
+<div class="row">
+
+    <div class="column">
+
+      <div class="card"  style= "height: 1500x; width: 300x" *ngFor="let Workouts of Workouts">
+
+        <div class="card-body">
+            <p class="card-text"><b>Name:-  {{Workouts.name}}</b></p>
+            <p class="card-text"><b>Type:-  {{Workouts.type}}</b></p>
+            <p class="card-text"><b>Duration:-  {{Workouts.duration}} minutes</b></p>
+            <p class="card-text"><b>Description:-  </b>{{Workouts.description}}</p>
+
+        </div>
+
+    </div>
+
+    </div>
+
+ </div>

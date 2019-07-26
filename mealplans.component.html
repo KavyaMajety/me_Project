@@ -1,0 +1,200 @@
+<h1 class="display-4" style = "color:#343a40"><b>Welcome to the MealPlans Hub</b></h1>
+<div class="jumbotron">
+  </div>
+  <div class="form-group">
+        <label for="comment">Enter your Ideas!</label>
+        <br/>
+           All fields are mandatory
+            <div class="form-group">
+                <label for="type" id = "type" class="col-sm-3 control-label">Select Type*</label>
+                <div class="col-sm-9">
+                    <select name = "type"  [(ngModel)] = "MealPlans.type">
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Vegetarian">Non Vegetarian</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type" class="col-sm-3 control-label">Duration* </label>
+            <div class="col-sm-9">
+                <input type="number" id="duration" placeholder="Enter the number of days" class="form-control" name = "duration" [(ngModel)]  = "MealPlans.duration">
+            </div>
+            <br/>
+            <div>
+                <input class="form-control" rows="5" id="description" placeholder="Enter the Description(limit 255 char)" [(ngModel)] = "MealPlans.description">
+                <div class="form-group">
+                    <label for="type" class="col-sm-3 control-label">Fats* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="fats" placeholder="Enter the amount of fat" class="form-control" name = "fats" [(ngModel)]  = "MealPlans.fats">
+                </div>
+                <div class="form-group">
+                    <label for="type" class="col-sm-3 control-label">Protiens* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="Protiens" placeholder="Enter the amount of protiens" class="form-control" name = "protiens" [(ngModel)]  = "MealPlans.protiens">
+                </div>
+                <div class="form-group">
+                    <label for="type" class="col-sm-3 control-label">Carbohydrates* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="carbohydrates" placeholder="Enter the amount of carbohydrates" class="form-control" name = "carbohydrates" [(ngModel)]  = "MealPlans.carbohydrates">
+                </div>
+                <div class="form-group">
+                    <label for="type" class="col-sm-3 control-label">Fibre* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="fibre" placeholder="Enter the amount of fibre" class="form-control" name = "fibre" [(ngModel)]  = "MealPlans.fibre">
+                </div>
+        <br/>
+        <button type = "button" (click)="addMealPlanIdea()">Submit my Idea</button>
+      </div>
+  <div class="row">
+      <div class="card" style= "height: 1200x; width: 300x">
+            <div class="card-body">
+                <h4><b>Meal Plan</b></h4>
+                <b>Type : Non-Vegetarian</b>
+                <br>
+                <b>Duration : 1 day</b>
+                <br>
+                <br>
+                <b>Breakfast : Oatmeal(QUAKER MultiGrain)</b>
+                <li></li>
+                <li>Protein : 16.85</li>
+                <li>Fat : 4.58</li>
+                <li>Carbohydrates : 47.64</li>
+                <li>Calories : 286.92</li>
+                <br>
+                <b>Lunch : Chicken Stir-Fry with Vegetables</b>
+                <li>Protein : 23.46</li>
+                <li>Fat : 14.79</li>
+                <li>Carbohydrates : 79.05</li>
+                <li>Calories : 540.6</li>
+                <br>
+                <b>Dinner : Caesar Salad Tacos</b>
+                <li>Protein : 20.98</li>
+                <li>Fat : 16.14</li>
+                <li>Carbohydrates : 40.24</li>
+                <li>Calories : 378.99</li>
+                <br>
+                <b>Total</b>
+                <li>Protein : 61.29</li>
+                <li>Fat : 35.51</li>
+                <li>Carbohydrates : 166.93</li>
+                <li>Calories : 1206.51</li>
+            </div>
+      </div>
+  </div>
+  
+  
+  <div class="row">
+      <div class="card" style= "height: 1200x; width: 300x">
+            <div class="card-body">
+                <h4><b>Meal Plan</b></h4>
+                <b>Type : Vegetarian</b>
+                <br>
+                <b>Duration : 1 day</b>
+                <br>
+                <br>
+                <b>Breakfast : Raisin Bran</b>
+                <li></li>
+                <li>Protein : 16.99</li>
+                <li>Fat : 4.61</li>
+                <li>Carbohydrates : 64.34</li>
+                <li>Calories : 340.75</li>
+                <br>
+                <b>Lunch : Sandwich-Peanut Butter & Jelly</b>
+                <li>Protein : 15.43</li>
+                <li>Fat : 18.03</li>
+                <li>Carbohydrates : 56.92</li>
+                <li>Calories : 437.68</li>
+                <br>
+                <br>
+                <b>Dinner : Marinated Green Soybeans and Vegetables</b>
+                <li>Protein : 25.76</li>
+                <li>Fat : 14.48</li>
+                <li>Carbohydrates : 33.82</li>
+                <li>Calories : 341.02</li>
+                <br>
+                <b>Total</b>
+                <li>Protein : 58.19</li>
+                <li>Fat : 37.12</li>
+                <li>Carbohydrates : 155.08</li>
+                <li>Calories : 1119.45</li>
+            </div>
+      </div>
+  </div>
+  
+  
+  <div class="row">
+      <div class="card" style= "height: 1200x; width: 300x">
+            <div class="card-body">
+                <h4><b>Meal Plan</b></h4>
+                <b>Type : Non-Vegetarian</b>
+                <br>
+                <b>Duration : 1 day</b>
+                <br>
+                <br>
+                <b>Breakfast : Cereal-CHEERIOS</b>
+                <li></li>
+                <li>Protein : 15.33</li>
+                <li>Fat : 5.35</li>
+                <li>Carbohydrates : 41.04</li>
+                <li>Calories : 263.82</li>
+                <br>
+                <b>Lunch : Chicken & Rice</b>
+                <li>Protein : 38.32</li>
+                <li>Fat : 6.69</li>
+                <li>Carbohydrates : 70.04</li>
+                <li>Calories : 502.46</li>
+                <br>
+                <br>
+                <br>
+                <b>Dinner : Southwestern Kabobs</b>
+                <li>Protein : 20.29</li>
+                <li>Fat : 4.64</li>
+                <li>Carbohydrates : 40.6</li>
+                <li>Calories : 289.04</li>
+                <br>
+                <b>Total</b>
+                <li>Protein : 73.94</li>
+                <li>Fat : 16.68</li>
+                <li>Carbohydrates : 151.68</li>
+                <li>Calories : 1055.32</li>
+            </div>
+      </div>
+  </div>
+  
+  
+  <div class="row">
+      <div class="card" style= "height: 1200x; width: 300px">
+            <div class="card-body">
+                <h4><b>Meal Plan</b></h4>
+                <b>Type : Vegan</b>
+                <br>
+                <b>Duration : 1 day</b>
+                <br>
+                <br>
+                <b>Breakfast : Cereal-POST Raisin Bran</b>
+                <li></li>
+                <li>Protein : 21.12</li>
+                <li>Fat : 8.12</li>
+                <li>Carbohydrates : 64.2</li>
+                <li>Calories : 378.13</li>
+                <br>
+                <b>Lunch : Burger-Vege</b>
+                <li>Protein : 16.61</li>
+                <li>Fat : 4.13</li>
+                <li>Carbohydrates : 28.78</li>
+                <li>Calories : 208.13</li>
+                <br>
+                <br>
+                <b>Dinner : Sesame Beans</b>
+                <li>Protein : 23.1</li>
+                <li>Fat : 10.82</li>
+                <li>Carbohydrates : 45.38</li>
+                <li>Calories : 365.42</li>
+                <b>Total</b>
+                <li>Protein : 60.83</li>
+                <li>Fat : 23.07</li>
+                <li>Carbohydrates : 138.36</li>
+                <li>Calories : 951.68</li>
+            </div>
+      </div>
+  </div>
